@@ -1,3 +1,5 @@
+
+// import Search from './search-bar/component'
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'reactstrap';
 
@@ -46,3 +48,4 @@ class Navigation extends Component {
 }
 
 export default Navigation
+
