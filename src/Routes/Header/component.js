@@ -11,7 +11,7 @@ class Account extends Component {
         </FormGroup>
         {''}
         <FormGroup>
-          <Label for="passworn">Password</Label>{''}
+          <Label for="password">Password</Label>{''}
           <input type="password" name="password" id="password" placeholder="Password"/>
         </FormGroup>
         {''}
