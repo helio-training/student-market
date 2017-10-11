@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Account from './Routes/Header/component'
+import Header from './Routes/Header/component'
+import Chickens from './Routes/Products/chickens'
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Account/>
+        <Header/>
+        <Chickens/>
       </div>
     );
   }
