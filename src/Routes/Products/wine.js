@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {CardDeck} from 'reactstrap'
 import CardTemplate from '../Navigation/card-template/component'
 
 export default (props) => {
@@ -11,7 +11,7 @@ export default (props) => {
                     cardText: 'Persistent flavors of ripe raspberry, boysenberry, pomegranate, and vanilla linger for a smooth finish.'
                 },
                 {
-                    src: 'https://www.craftbeerkings.com/image/cache/data/menagecalred14-1000x1000.jpg',
+                    src: 'https://www.craftbeerkings.com/image/cache/data/menagecalred14-1000x1000.jp',
                     cardTitle: 'Menage a Trois',
                     price: '$19.00',
                     cardText: 'Luscious love affair offering bold blackberry and raspberry nature.'
@@ -47,7 +47,9 @@ export default (props) => {
 
     return (
             <div>
+              <CardDeck>
                 {products}
+              </CardDeck>
             </div>
     )
     }

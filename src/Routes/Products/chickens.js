@@ -1,18 +1,19 @@
 import React from 'react'
 import CardTemplate from '../Navigation/card-template/component'
+import {CardDeck} from 'reactstrap'
 
 export default (props) => {
   const Chickens = [
     {
       src: 'https://static3.mypetchicken.com/images/product_images/large/ChickenSwing09.jpg',
       cardTitle: 'Chicken on a swing',
-      price: '$30',
+      Price: '$30',
       text:'Highly skilled Trapeze chicken'
     },
     {
       src: 'http://cdn.shopify.com/s/files/1/0252/1753/products/harness_copy_e722aeb1-f193-4e41-bc20-5f706a0705f6_1024x1024.jpg?v=1436304643',
       cardTitle: 'Matched pair of walking chickens for when you want chicken on the go',
-      price: '$70',
+      Price: '$70',
       text:'Certified walking chickens'
     },
     {
@@ -41,13 +42,15 @@ export default (props) => {
     }
   ]
 
-  const Products = Chickens.map((chicken, idx) => {
+  const products = Chickens.map((chicken, idx) => {
     return <CardTemplate key={idx} product={chicken}/>
   })
 
   return (
     <div>
-      {Products}
+      <CardDeck>
+        {products}
+      </CardDeck>
     </div>
   )
 }
