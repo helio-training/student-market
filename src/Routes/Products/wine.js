@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class WineProducts  extends Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-            wineList: [
+import CardTemplate from '../Navigation/card-template/component'
+
+export default (props) => {
+    const wines = [
                 {
                     src: 'https://www.theprisonerwinecompany.com/assets/images/contentblock/photos/Prisoner.jpg',
                     cardTitle: 'The Prisoner',
@@ -42,12 +41,13 @@ class WineProducts  extends Component {
                     cardText: 'This is the Grand Royale of all the most expensive wines out there. In a Napa valley wine auction in 2000, this wine got the highest bid, with a whopping price tag of around $500,000.'
                 },
             ]
-        }
-    }
+    const products = wines.map((wine) => {
+        return <CardTemplate product={wine}/>
+    })
 
-    render () {
-        return <h1>Hi from products</h1>
+    return (
+            <div>
+                {products}
+            </div>
+    )
     }
-}
-
-export default WineProducts

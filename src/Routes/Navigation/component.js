@@ -1,7 +1,6 @@
-
-// import Search from './search-bar/component'
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'reactstrap';
+import Search from './search-bar/component'
 
 import NavigationLink from './navigation-link/component'
 
@@ -9,6 +8,7 @@ class Navigation extends Component {
     render () {
         return (
             <Navbar light={true} className="Bg-light main-navigation">
+              <Search/>
                 <Nav>
                     <NavigationLink
                         type="dropdown"
@@ -19,23 +19,23 @@ class Navigation extends Component {
                                 href: ''
                             },
                             {
-                                label: '',
+                                label: 'Chickens',
                                 href: ''
                             },
                             {
-                                label: '',
+                                label: 'Watches',
                                 href: ''
                             },
                             {
-                                label: '',
+                                label: 'Dragon Eggs',
                                 href: ''
                             },
                             {
-                                label: '',
+                                label: 'Shoes',
                                 href: ''
                             },
                             {
-                                label: '',
+                                label: 'Clothing',
                                 href: ''
                             },
 
