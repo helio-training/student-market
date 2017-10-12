@@ -7,6 +7,7 @@ import Shoes from './Products/shoes'
 import Watches from './Products/watches'
 import Wine from './Products/wine'
 import { Switch, Route } from 'react-router-dom'
+import Yoruba from  './Products/yoruba'
 
 export default class Routes extends Component {
   render() {
@@ -21,6 +22,8 @@ export default class Routes extends Component {
           <Route path='/shoes' component={Shoes}/>
           <Route path='/watches' component={Watches}/>
           <Route path='/wine' component={Wine}/>
+          <Route path='/yoruba' component={Yoruba}/>
+
         </Switch>
       </div>
     )
