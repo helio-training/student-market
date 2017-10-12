@@ -4,6 +4,7 @@ import Navigation from './Navigation/component'
 import Chickens from './Products/chickens'
 import DragonEggs from './Products/dragon-eggs'
 import Watches from './Products/watches'
+import Wine from './Products/wine'
 import { Switch, Route } from 'react-router-dom'
 
 export default class Routes extends Component {
@@ -17,6 +18,7 @@ export default class Routes extends Component {
           <Route path='/chickens' component={Chickens}/>
           <Route path='/dragon-eggs' component={DragonEggs}/>
           <Route path='/watches' component={Watches}/>
+          <Route path='/wine' component={Wine}/>
         </Switch>
       </div>
     )
