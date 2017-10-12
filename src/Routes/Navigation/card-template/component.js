@@ -15,7 +15,7 @@ class CardTemplate extends Component {
               <CardTitle>{this.props.product.cardTitle}</CardTitle>
               <CardSubtitle>{this.props.product.Price}</CardSubtitle>
               <CardText>{this.props.product.cardText}</CardText>
-              <Button tex color="primary">Buy Now</Button>
+              <Button color="primary">Buy Now</Button>
             </CardBody>
           </Card>
         </Row>
