@@ -3,9 +3,11 @@ import Header from './Header/component'
 import Navigation from './Navigation/component'
 import Chickens from './Products/chickens'
 import DragonEggs from './Products/dragon-eggs'
+import Shoes from './Products/shoes'
 import Watches from './Products/watches'
 import Wine from './Products/wine'
 import { Switch, Route } from 'react-router-dom'
+import Yoruba from  './Products/yoruba'
 
 export default class Routes extends Component {
   render() {
@@ -17,8 +19,11 @@ export default class Routes extends Component {
         <Switch>
           <Route path='/chickens' component={Chickens}/>
           <Route path='/dragon-eggs' component={DragonEggs}/>
+          <Route path='/shoes' component={Shoes}/>
           <Route path='/watches' component={Watches}/>
           <Route path='/wine' component={Wine}/>
+          <Route path='/yoruba' component={Yoruba}/>
+
         </Switch>
       </div>
     )
