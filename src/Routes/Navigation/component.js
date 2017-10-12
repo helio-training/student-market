@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'reactstrap';
+import Search from './search-bar/component'
 
 import NavigationLink from './navigation-link/component'
 
