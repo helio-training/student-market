@@ -1,5 +1,6 @@
 import React from 'react'
 import CardTemplate from '../Navigation/card-template/component'
+import {CardDeck, CardGroup} from 'reactstrap'
 
 export default (props) => {
   const watches = [
@@ -47,7 +48,9 @@ export default (props) => {
 
   return (
     <div>
+      <CardDeck>
       {products}
+      </CardDeck>
     </div>
   )
 }

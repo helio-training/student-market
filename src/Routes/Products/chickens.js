@@ -1,5 +1,6 @@
 import React from 'react'
 import CardTemplate from '../Navigation/card-template/component'
+import {CardDeck} from 'reactstrap'
 
 export default (props) => {
   const Chickens = [
@@ -41,13 +42,15 @@ export default (props) => {
     }
   ]
 
-  const Products = Chickens.map((chicken, idx) => {
+  const products = Chickens.map((chicken, idx) => {
     return <CardTemplate key={idx} product={chicken}/>
   })
 
   return (
     <div>
-      {Products}
+      <CardDeck>
+        {products}
+      </CardDeck>
     </div>
   )
 }

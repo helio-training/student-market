@@ -1,5 +1,6 @@
 import React from 'react'
 import CardTemplate from '../Navigation/card-template/component'
+import {CardDeck} from 'reactstrap'
 
 export default (props) => {
   const dragonEggs = [
@@ -43,7 +44,9 @@ export default (props) => {
 
   return (
     <div>
-      {products}
+      <CardDeck>
+        {products}
+      </CardDeck>
     </div>
   )
 }
