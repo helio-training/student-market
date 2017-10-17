@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CardTemplateSize from '../Navigation/card-template-size/component'
+
 
 class Shoes  extends Component {
   constructor (props) {

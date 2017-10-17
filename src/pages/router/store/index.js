@@ -1,5 +1,9 @@
+
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux'
 import routerItems from '../router'
+import React, { Component } from 'react'
+import { connect } from 'redux'
+import { createStore } from 'redux'
 
 export default createStore(
     combineReducers({
